@@ -18,6 +18,7 @@ function onClick() {
 }
 
 stopBtn.addEventListener('click', () => {
+  isActive = false;
   document.body.style.backgroundColor = 'white';
   clearInterval(timerId);
   stopBtn.disabled = true;
